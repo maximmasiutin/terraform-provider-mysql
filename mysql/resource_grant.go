@@ -834,7 +834,6 @@ func areSameGrants(grantA MySQLGrant, grantB MySQLGrant) bool {
 		}
 	}
 
-	// Compare roles 
 	grantAWithRoles, aHasRoles := grantA.(MySQLGrantWithRoles)
 	grantBWithRoles, bHasRoles := grantB.(MySQLGrantWithRoles)
 	if aHasRoles && bHasRoles {
